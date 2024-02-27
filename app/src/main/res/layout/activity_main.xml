@@ -14,26 +14,62 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="40sp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/group"></ImageView>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/user"
+                    android:inputType="text">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tidPasswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/passwd"
+                    android:inputType="textPassword">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <ImageButton
+                android:id="@+id/imbtIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/group"
+                android:background="@color/transparente">
+            </ImageButton>
+
+
+            <TextView
+                android:id="@+id/tvDatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="hola"
-                android:textSize="30sp"
-                android:textAlignment="center">
+                android:textAlignment="center"
+                android:textSize="30sp">
             </TextView>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                android:layout_marginTop="50dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginEnd="60dp"
-                android:text="boton">
-            </Button>
-
         </LinearLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
