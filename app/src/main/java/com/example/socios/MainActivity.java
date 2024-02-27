@@ -1,6 +1,7 @@
 package com.example.socios;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.view.View;
@@ -38,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
                     tidPasswd.setError("contraseña incorrecta");
 
                     tvDatos.setText(tieUsuario.getText() + "\n" + tidPasswd.getText());
-
-
                 }
 
             }

@@ -22,13 +22,13 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="50dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tieUsuario"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/user"
                     android:inputType="text">
                 </com.google.android.material.textfield.TextInputEditText>
@@ -40,12 +40,14 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="50dp">
 
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tidPasswd"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/passwd"
                     android:inputType="textPassword">
+
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
