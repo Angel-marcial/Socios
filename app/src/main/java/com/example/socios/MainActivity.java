@@ -2,8 +2,6 @@ package com.example.socios;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -14,13 +12,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ViewPager viewPager;
-    private int[] imageIds = {R.drawable.group, R.drawable.group, R.drawable.group}; // Reemplaza con tus recursos de imágenes
-    private int currentPage = 0;
-    private static final long DELAY_MS = 3000; // 3 segundos
-    private Handler handler;
-
-
+    ViewPager viewPager;
+    int[] imageIds = {R.drawable.group, R.drawable.group, R.drawable.group}; // Reemplaza con tus recursos de imágenes
+    int currentPage = 0;
+    static final long DELAY_MS = 3000;
+    Handler handler;
     EditText tieUsuario ;
     EditText tidPasswd;
     ImageButton imbtIngresar;
